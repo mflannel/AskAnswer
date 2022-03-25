@@ -20,14 +20,13 @@ struct Quote: Decodable
     var h: String
 }
 
-// MARK: - Запрос к API, изменение текста
 func getInspired(_ label: UILabel, _ label2: UILabel)
 {
-    AF.request(key)
-    .responseDecodable(of: [Quote].self)
+    AF.request(key).responseDecodable(of: [Quote].self)
     {   response in
         let quote: Quote = response.value![0]
         label.text = quote.a
         label2.text = "\"" + quote.q + "\""
     }
 }
+
