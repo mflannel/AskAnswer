@@ -1,4 +1,4 @@
-# Askanswer
+# 🪄Askanswer
 Simple app providing you answers for your questions given by famous writers.
 
 The purpose of this project is to practice:
